@@ -1,0 +1,34 @@
+default:
+  input_profile:
+    input_folderid: syn25791888
+    project_id: syn25791892
+    input_proj_id: syn26340641
+    temp_storage_loc: /home/sage
+    temp_input_loc: /home
+  provenance:
+    annotations:
+      data_type: ['clinical','geneExpression']
+      resource_type: metadata
+      metadata_type: 'analytical covariates'
+      ismodelsystem: FALSE
+      ismultispecimen: TRUE
+      fileformat: csv
+      grant: U01AG046152
+      species: Human
+      organ: brain
+      tissue: ['dorsolateral prefrontal cortex', 'Head of caudate nucleus', 'posterior cingulate cortex']
+      study: ["ROSMAP","rnaSeqReprocessing"]
+      consortium: AMP-AD
+      assay: rnaSeq
+    code_annotations:
+        repository: PradoVarathan/Reprocessing_Metanetwork_Analysis
+        ref: branch
+        ref_name: main
+        repository_path: Consensus_Wrapper.R
+    activity_name: ConsensusBuild
+    activity_description: 'Using the networks to prepare a consensus network from syn26340641 data'
+  output_profile:
+    output_path: Consensus
+    md5_output_path: Consensus_md5.out
+    output_name: 'Consensus Network '
+    error_path: Consensus_err

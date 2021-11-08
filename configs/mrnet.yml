@@ -1,0 +1,42 @@
+default:
+  input_profile:
+    input_synid: syn26340641
+    project_id: syn25791888
+    network_method: ["mrnet"]
+    na_fill: Winsorize
+    p_val_mrnet: 1
+    p_val_wgcna: 1
+    temp_storage_loc: /home/sage
+    rsquaredCut: 0.80
+    defaultnaPower: 6
+  provenance:
+    annotations:
+      data_type: ['clinical','geneExpression']
+      resource_type: metadata
+      metadata_type: 'analytical covariates'
+      ismodelsystem: FALSE
+      ismultispecimen: TRUE
+      fileformat: csv
+      grant: U01AG046152
+      species: Human
+      organ: brain
+      tissue: ['dorsolateral prefrontal cortex', 'Head of caudate nucleus', 'posterior cingulate cortex']
+      study: ["ROSMAP","rnaSeqReprocessing"]
+      consortium: AMP-AD
+      assay: rnaSeq
+    code_annotations:
+        repository: PradoVarathan/Reprocessing_Metanetwork_Analysis
+        ref: branch
+        ref_name: main
+        repository_path: Network_Wrapper.R
+    activity_name: mrnet
+    activity_description: 'Using the mrnet to prepare network from syn26340641 data'
+  output_profile:
+    output_path: mrnet
+    md5_output_path: mrnetmd5.out
+    output_name: 'mrnet Network '
+    error_path: mrnet_err
+  computing_specs:
+    light_ncores: 32
+    medium_ncores: 0
+    heavy_ncores: 0
