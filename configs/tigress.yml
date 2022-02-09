@@ -3,7 +3,7 @@ default:
     input_synid: syn26340641
     project_id: syn25791888
     network_method: ["tigress"]
-    na_fill: NULL
+    na_fill: Winsorize
     p_val_c3net: 1
     p_val_mrnet: 1
     p_val_wgcna: 1
@@ -38,6 +38,6 @@ default:
     output_name: 'Final Rosmap Network from tigress'
     error_path: tigress_err
   computing_specs:
-    light_ncores: 96
-    medium_ncores: 128
+    light_ncores: 0
+    medium_ncores: 0
     heavy_ncores: 256
