@@ -1,10 +1,10 @@
 default:
   input_profile:
-    project_id: syn25953317
-    input_synid: syn21266454
-    input_proj_id: syn25992611
-    bic_file: syn26004256
-    temp_storage_loc: /home/sage
+    project_id: syn25791892
+    input_synid: syn26340641
+    input_proj_id: syn27042832  
+    bic_file: syn27042833 
+    temp_storage_loc: /home/test_res
     temp_input_loc: /home
   provenance:
     annotations:
@@ -33,3 +33,5 @@ default:
     md5_output_path: rosmap_modulesmd5.out
     output_name: 'rosmpa Modules'
     error_path: rosmap_modules_err
+
+
