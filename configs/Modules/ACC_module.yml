@@ -1,0 +1,35 @@
+default:
+  input_profile:
+    project_id: syn29862490 
+    input_synid: syn28572504
+    input_proj_id: syn29860015  
+    bic_file: syn29859848 
+    temp_storage_loc: /root/temp
+    temp_input_loc: /root/
+  provenance:
+    annotations:
+      data_type: ['geneExpression']
+      resource_type: experimentalData
+      metadata_type: 'analytical covariates'
+      ismodelsystem: FALSE
+      ismultispecimen: FALSE
+      fileformat: csv
+      grant: ['U01AG046152', 'U01AG046170', 'U01AG046139', 'U24AG061340']
+      species: Human
+      organ: brain
+      tissue: ['ACC']
+      study: ['RNAseq_Metanetworks']
+      consortium: AMP-AD
+      assay: rnaSeq
+    code_annotations:
+        repository: Sage-Bionetworks/metanetwork
+        ref: branch
+        ref_name: master
+        repository_path: inst/runscripts/Network_Wrapper.R
+    activity_name: 'Module Building Process'
+    activity_description: 'Using the consensus network to prepare gene modules from ACC data'
+  output_profile:
+    output_path: /root/out
+    md5_output_path: ACC_modulesmd5.out
+    output_name: 'ACC Modules'
+    error_path: /root/error
